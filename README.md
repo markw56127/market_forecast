@@ -1,10 +1,23 @@
 # market_forecast
 Python codebase for predicting future stock market trends.
 
-Built a Geometric Brownian Motion (GBM)/Long Short-Term Memory (LSTM)/Reinforcement Learning (RL) fused model for long-term prediction. Adjustable initialization period for data training. 
+This repository contains three Python scripts for:
+- Geometric Brownian Motion (GBM)/Long Short-Term Memory (LSTM)/Reinforcement Learning (RL) fused model for long-term prediction. Adjustable initialization period for data training.
+- High-dimensional LSTM + GBM forecasting with technical indicators and sentiment analysis from Yahoo Finance news.
+- Model for option chain retrieval, payoff simulation, and Black–Scholes Greeks calculation.
 
-Additional GBM/LSTM model fused with VADER for sentiment analysis of weekly news articles pertaining to stock of interest. This model is for short term prediction. 
+Features include:
+- Stock price forecasting with LSTM + GBM hybrid approach
+- Reinforcement learning environment for allocation optimization
+- Sentiment analysis integration
+- Option payoff visualizations and Greeks
 
-Lastly includes a model for predicting profit on options (long call and long put) using real time Yahoo Finance data and Black Scholes (Greeks).
+## Installation
+```bash
+git clone https://github.com/markw56127/market_forecast.git
+cd market_forecast
+pip install -r requirements.txt
 
-Both stock pricing predictive models provide graphics of the historical data (actual + predicted), alongside the trend of the predicted future prices. The options model also provides a graph of the profit versus the intended long call or long put choice.
+python rl_gbm_lstm.py
+python short_term_high_dimension_gbm_lstm.py
+python options.py
