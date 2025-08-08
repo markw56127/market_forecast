@@ -1,0 +1,12 @@
+yfinance
+numpy
+pandas
+matplotlib
+scikit-learn
+torch
+ta
+gymnasium
+vaderSentiment
+yahoo_fin
+xgboost
+scipy
